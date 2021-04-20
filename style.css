@@ -1,0 +1,45 @@
+body {
+  background-color: #272727;
+  color: #AAAAAA;
+  font-family: 'Source Serif Pro', serif;
+}
+.labyrinth {
+    stroke-dasharray: 30200;
+	stroke-dashoffset: 302200;
+	animation: dash 5s ease-in-out forwards;
+ }
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 30200;
+    stroke-width: 10;
+  }
+  100% {
+    stroke-dashoffset: 0;
+    stroke-width: 10;
+  }
+}
+.feather {
+    border-radius: 50%;
+    width: 200px;
+    height:60px;
+    background-color: white;
+    animation: 12s linear forwards float;
+}
+@keyframes float {
+    0% {
+        transform: translate(500px,100px) rotate( -15deg)
+    }
+    50% {
+        transform: translate(300px,450px) rotate( 15deg)
+    }
+    100% {
+        transform: translate(500px,800px)  rotate( -15deg) scale(2)
+    }
+}
+main {
+    width: 800px;
+    height: 800px;
+    border: 2px solid red;
+    margin: 60px auto;
+}
