@@ -42,3 +42,30 @@ main {
     border: 2px solid red;
     margin: 60px auto;
 }
+.container-minotaur {
+  position: relative;
+  text-align: center;
+  background: purple;
+}
+.minotaur-svg {
+  position: relative;
+}
+.miontaur-text {
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.container-labyrinth {
+  position: relative;
+  text-align: center;
+  background: orange
+}
+.labyrinth-svg {
+  position: absolute;
+}
+.labyrinth-text {
+  position: absolute;
+  text-align: center;
+}
