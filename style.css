@@ -3,11 +3,37 @@ body {
   color: #AAAAAA;
   font-family: 'Source Serif Pro', serif;
 }
+svg {
+    overflow: visible;
+}
 .labyrinth {
   stroke-dasharray: 30200;
 	stroke-dashoffset: 302200;
-	animation: dash 5s ease-in-out forwards;
+	
   position: relative;
+}
+.labyrinth-anim {
+    animation: dash 5s ease-in-out forwards;
+}
+
+.glowing-sun-svg {
+    display: flex;
+    justify-content: center;
+}
+.sun {
+    transform-origin: center;
+}
+.sun-anim {
+ animation-name: pulse;
+ animation-duration: 2s;
+ animation-iteration-count: 8;
+ animation-direction: alternate;
+}
+@keyframes pulse {
+   0%{ transform: scale(.9);}
+   50%{ transform: scale(1);}
+   75%{ transform: scale(.9);}
+   100%{ transform: scale(1);}
 }
 
 @keyframes dash {
