@@ -99,7 +99,7 @@ svg {
         transform: translate(300px,450px) rotate( 15deg)
     }
     100% {
-        transform: translate(500px,800px)  rotate( -15deg) scale(2)
+        transform: translate(500px,800px)  rotate( -15deg) scale(1.25)
     }
 }
 main {
@@ -261,4 +261,13 @@ main {
   height: 1080;
   padding: 90px;
   margin: 230px auto;
+}
+.final-feather {
+    border-radius: 50%;
+    width: 200px;
+    height:60px;
+    animation: 12s linear forwards float;
+}
+.falling-icarus {
+  animation: float 12s linear forwards;
 }
