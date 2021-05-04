@@ -60,12 +60,10 @@ svg {
 .first-flight-text {
   display: flex;
   justify-content: center;
-  margin-bottom: -250px;
 }
 @keyframes pulse {
-   0%{ transform: scale(.9);}
-   50%{ transform: scale(1);}
-   75%{ transform: scale(.9);}
+   0%{ transform: scale(1);}
+   50%{ transform: scale(.925);}
    100%{ transform: scale(1);}
 }
 
@@ -211,10 +209,32 @@ main {
 }
 @keyframes scaled{
   0% {transform: scale(1);}
-  50% {transform: scale(.85);}
+  50% {transform: scale(.925);}
   100% {transform: scale (1);}
 }
 .container-ignored {
+  display: flex;
+  justify-content: center;
+  width: 1920px;
+  height: 1080px;
+  padding: 90px;
+  margin: 230px auto;
+}
+.ignored-text {
+  padding-top: 450px;
+}
+.container-too-close {
+  display: flex;
+  justify-content: center;
+  width: 1920px;
+  height: 1080px;
+  padding: 90px;
+  margin: 230px auto;
+}
+.too-close-content {
+  width: 1920px;
+}
+.medium-sun-svg {
   display: flex;
   justify-content: center;
 }
