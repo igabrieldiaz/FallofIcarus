@@ -237,4 +237,14 @@ main {
 .medium-sun-svg {
   display: flex;
   justify-content: center;
+  animation: scaledUp 3s infinite ease;
+}
+.dark-icarus {
+  display: flex;
+  justify-content: center;
+}
+@keyframes scaledUp {
+  0% {transform: scale(1)}
+  50% {transform: scale(1.5)}
+  100% {transform: scale(1)}
 }
