@@ -224,27 +224,29 @@ main {
   padding-top: 450px;
 }
 .container-too-close {
-  display: flex;
-  justify-content: center;
+  position: relative;
+  text-align: center;
   width: 1920px;
-  height: 1080px;
+  height: 1080;
   padding: 90px;
   margin: 230px auto;
 }
 .too-close-content {
   width: 1920px;
 }
+.dark-icarus-svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50,-50);
+  animation: scaledDown 6s infinite ease;
+}
 .medium-sun-svg {
   display: flex;
-  justify-content: center;
-  animation: scaledUp 3s infinite ease;
+  justify-content: center; 
 }
-.dark-icarus {
-  display: flex;
-  justify-content: center;
-}
-@keyframes scaledUp {
-  0% {transform: scale(1)}
-  50% {transform: scale(1.5)}
-  100% {transform: scale(1)}
+@keyframes scaledDown {
+  0% {transform: scale(1);}
+  50% {transform: scale(.55);}
+  100% {transform: scale(1);}
 }
