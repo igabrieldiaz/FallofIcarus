@@ -58,8 +58,12 @@ svg {
   justify-content: center;
 }
 .first-flight-text {
-  display: flex;
-  justify-content: center;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 85px;
 }
 @keyframes pulse {
    0%{ transform: scale(1);}
@@ -205,7 +209,7 @@ main {
 }
 .wing-svg {
   position: center;
-  animation: scaled 3s infinite ease;
+  animation: scaled 7s infinite ease;
 }
 @keyframes scaled{
   0% {transform: scale(1);}
@@ -239,7 +243,7 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50,-50);
-  animation: scaledDown 6s infinite ease;
+  animation: scaledDown 8s infinite ease;
 }
 .medium-sun-svg {
   display: flex;
@@ -247,6 +251,14 @@ main {
 }
 @keyframes scaledDown {
   0% {transform: scale(1);}
-  50% {transform: scale(.55);}
+  50% {transform: scale(.45);}
   100% {transform: scale(1);}
+}
+.container-final-page {
+  position: relative;
+  text-align: center;
+  width: 1920px;
+  height: 1080;
+  padding: 90px;
+  margin: 230px auto;
 }
