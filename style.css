@@ -23,6 +23,10 @@ svg {
   padding: 90px;
   margin: 230px auto;
 }
+.glowing-sun-content {
+  width: 1920px;
+  height: 1080;
+}
 .glowing-sun-svg {
     display: flex;
     justify-content: center;
@@ -30,6 +34,7 @@ svg {
 .glowing-sun-text {
   display: flex;
   justify-content: center;
+  padding-top: 70px;
 }
 .sun {
     transform-origin: center;
@@ -69,8 +74,12 @@ svg {
     stroke-dashoffset: 30200;
     stroke-width: 10;
   }
-  100% {
+  50% {
     stroke-dashoffset: 0;
+    stroke-width: 10;
+  }
+  100% {
+    stroke-dashoffset: 30200;
     stroke-width: 10;
   }
 }
@@ -198,6 +207,12 @@ main {
 }
 .wing-svg {
   position: center;
+  animation: scaled 3s infinite ease;
+}
+@keyframes scaled{
+  0% {transform: scale(1);}
+  50% {transform: scale(.85);}
+  100% {transform: scale (1);}
 }
 .container-ignored {
   display: flex;
