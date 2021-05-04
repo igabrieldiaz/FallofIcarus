@@ -15,7 +15,14 @@ svg {
 .labyrinth-anim {
     animation: dash 5s ease-in-out forwards;
 }
-
+.container-glowing-sun {
+  position: relative;
+  text-align: center;
+  width: 1920px;
+  height: 1080;
+  padding: 90px;
+  margin: 230px auto;
+}
 .glowing-sun-svg {
     display: flex;
     justify-content: center;
@@ -33,6 +40,14 @@ svg {
  animation-iteration-count: infinite;
  animation-direction: alternate;
 }
+.container-first-flight {
+  position: relative;
+  text-align: center;
+  width: 1920px;
+  height: 1080;
+  padding: 90px;
+  margin: 230px auto;
+}
 .first-flight-svg {
   display: flex;
   justify-content: center;
@@ -40,6 +55,7 @@ svg {
 .first-flight-text {
   display: flex;
   justify-content: center;
+  margin-bottom: -250px;
 }
 @keyframes pulse {
    0%{ transform: scale(.9);}
@@ -76,10 +92,9 @@ svg {
     }
 }
 main {
-    width: 800px;
-    height: 800px;
-    border: 2px solid red;
-    margin: 60px auto;
+    width: 1920px;
+    height: 1080px;
+    margin: 230px auto;
 }
 .main-text {
   position: absolute;
@@ -91,6 +106,10 @@ main {
 .container-minotaur {
   position: relative;
   text-align: center;
+  width: 1920px;
+  height: 1080;
+  padding: 90px;
+  margin: 230px auto;
 }
 .minotaur-svg {
   position: relative;
@@ -102,9 +121,27 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+@keyframes faded {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.minotaur-svg {
+  animation-name: faded;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+}
 .container-labyrinth {
   position: relative;
   text-align: center;
+  width: 1920px;
+  height: 1080;
+  padding: 90px;
+  margin: 230px auto;
 }
 .labyrinth-text {
   position: absolute;
@@ -122,6 +159,7 @@ main {
   width: 1920px;
   height: 1080;
   padding: 90px;
+  margin: 230px auto;
 }
 .ground-feathers-content {
   position: center;
@@ -142,7 +180,7 @@ main {
   width: 1920px;
   height: 1080;
   padding: 90px;
-  margin-bottom: 230px;
+  margin: 230px auto;
 }
 .wing-content {
   position: center;
