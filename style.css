@@ -13,7 +13,7 @@ svg {
   position: relative;
 }
 .labyrinth-anim {
-    animation: dash 5s ease-in-out forwards;
+    animation: dash 9s infinite ease-in-out forwards;
 }
 .container-glowing-sun {
   position: relative;
@@ -125,13 +125,16 @@ main {
   0% {
     opacity: 0;
   }
-  100% {
+  50% {
     opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 .minotaur-svg {
   animation-name: faded;
-  animation-duration: 5s;
+  animation-duration: 8s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-out;
 }
