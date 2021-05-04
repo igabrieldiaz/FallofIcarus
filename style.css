@@ -119,6 +119,12 @@ main {
 .container-ground-feathers {
   position: relative;
   text-align: center;
+  width: 1920px;
+  height: 1080;
+  padding: 90px;
+}
+.ground-feathers-content {
+  position: center;
 }
 .ground-feathers-text {
   position: absolute;
@@ -133,6 +139,13 @@ main {
 .container-wing {
   position: relative;
   text-align: center;
+  width: 1920px;
+  height: 1080;
+  padding: 90px;
+  margin-bottom: 230px;
+}
+.wing-content {
+  position: center;
 }
 .wing-text {
   position: absolute;
@@ -140,6 +153,7 @@ main {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  padding-top: 610px;
 }
 .wing-svg {
   position: center;
